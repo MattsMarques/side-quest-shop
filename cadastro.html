@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+        
+    <main class="form">
+        <div class="login-titulo">
+            <h1 class="pixelify-sans-display">Entre ou cadastre-se</h1>
+        </div>
+
+        <form action="index.html" method="post">
+
+            <div class="info">
+                <label for="nome">Informe seu nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input" required>
+            </div>
+
+            <div class="info">
+                <label for="email">Informe seu E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" class="input" required>
+            </div>
+
+            <div class="info">
+                <label for="senha">Informe sua senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="input" required>
+            </div>
+            
+            <div class="selecao">
+                <div class="info">
+                    <label for="data">data de nascimento</label>
+                    <input type="date" name="data" id="data" placeholder="Digite sua senha" class="input" required>
+                </div>
+
+                <div class="info">
+                    <label for="genero">Informe seu gênero</label>
+                    <select name="genero" id="genero" class="input" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="nao-informar">Prefiro não informar</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <label for="preferencia">Informe sua preferência</label>
+                    <select name="preferencia" id="preferencia" class="input" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="board-games">Board games</option>
+                        <option value="action-figures">Action figures</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+    </main>
+    
+    <footer>
+        <h3>Contato</h3>
+        <p>E-mail 1: mls22@discente.ifpe.edu.br</p>
+        <p>E-mail 2: mfmb@discente.ifpe.edu.br</p>
+
+        <p>© 2026 SideQuest. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
