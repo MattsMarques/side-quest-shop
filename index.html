@@ -11,15 +11,19 @@
     <!-- FONTE INTER -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="faviocon.svg" type="image/x-icon">
 </head>
 <body class="inter-font">
     <header>
         <h1 class="pixelify-sans-display">SideQuest</h1>
-        <div class="barra-pesquisa">
+        <div class="wrapper-pesquisa">
             <input id="pesquisa" type="text" placeholder="Busque sua próxima aventura!">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M22 22h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-6-2H6v-2h8v2Zm4 0h-2v-2h2v2ZM6 16H4v-2h2v2Zm10 0h-2v-2h2v2ZM4 14H2V6h2v8Zm14 0h-2V6h2v8ZM6 6H4V4h2v2Zm10 0h-2V4h2v2Zm-2-2H6V2h8v2Z"></path></svg>
+            <label for="pesquisa">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M22 22h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-6-2H6v-2h8v2Zm4 0h-2v-2h2v2ZM6 16H4v-2h2v2Zm10 0h-2v-2h2v2ZM4 14H2V6h2v8Zm14 0h-2V6h2v8ZM6 6H4V4h2v2Zm10 0h-2V4h2v2Zm-2-2H6V2h8v2Z"></path></svg>
+            </label>
         </div>
     </header>
 
@@ -46,7 +50,7 @@
         <div class="home-banner">
         <!--<img src="/assets/sidequest-img-banner.png" alt="banner com imagens de jogos de tabuleiro">-->
             <div class="banner-content">
-                <h2 class="banner-head">Novos jogos chegaram a taverna!</h2>
+                <h2 class="banner-head pixelify-sans-display">Novos jogos chegaram à taverna!</h2>
                 <a class="btn btn-banner" href="#board-games">Ver lançamentos</a>
             </div>
         </div>
@@ -55,32 +59,65 @@
             <h2>Board Games</h2>
             <p>Para jogar com amigos e família</p>
             <div class="grid">
-                <div class="card">
+                <div class="card card-board">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-board">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-board">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-board">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
+                </div>
+                <div class="card card-board">
+                    <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
+                    <h2 class="card-titulo">War 2</h2>
+                    <h2 class="card-preco">R$175,99</h2>
+                    <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
+                </div>
+                <div class="card card-board">
+                    <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
+                    <h2 class="card-titulo">War 2</h2>
+                    <h2 class="card-preco">R$175,99</h2>
+                    <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
             </div>
         </article>
@@ -88,54 +125,73 @@
         <article class="content catalogo" id="action-figures">
             <h2>Action figures</h2>
             <p>Personagens para sua estante</p>
-            <div class="grid">
-                <div class="card">
+            <div class="grid action-figures">
+                <div class="card card-figure">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-figure">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-figure">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
-
-                <div class="card">
+                <div class="card card-figure">
                     <img class="card-img" src="https://lojagrow.vtexassets.com/arquivos/ids/174410/04754_GROW_War_ll.jpg?v=639003888355730000" alt="War 2">
                     <h2 class="card-titulo">War 2</h2>
                     <h2 class="card-preco">R$175,99</h2>
                     <p class="card-descricao">Jogo de estratégia por turnos em que jogadores disputam territórios e objetivos combinando exércitos terrestres e ataques aéreos.</p>
+                    <a href="" class="btn btn-compra">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22H4v-2h16v2ZM4 14h4v2H4v4H2V4h2v10Zm18 6h-2v-4h-4v-2h4V4h2v16Zm-6-2H8v-2h8v2Zm4-14H4V2h16v2Z"></path></svg>
+                        <span>Adicionar ao baú</span>
+                    </a>
                 </div>
             </div>
         </article>
     </main>
 
     <footer>
-        <svg style="height:48px" viewBox="0 0 320 6" preserveAspectRatio="xMidYMid slice" aria-hidden="true" shape-rendering="crispEdges">
+        <svg class="footer-svg" style="height:48px" viewBox="0 0 320 6" preserveAspectRatio="xMidYMid slice" aria-hidden="true" shape-rendering="crispEdges">
             <path fill="currentColor" d="M3 0h1v1h-1zM20 0h1v1h-1zM22 0h1v1h-1zM31 0h1v1h-1zM32 0h1v1h-1zM35 0h1v1h-1zM63 0h1v1h-1zM69 0h1v1h-1zM73 0h1v1h-1zM74 0h1v1h-1zM81 0h1v1h-1zM85 0h1v1h-1zM89 0h1v1h-1zM99 0h1v1h-1zM108 0h1v1h-1zM109 0h1v1h-1zM118 0h1v1h-1zM120 0h1v1h-1zM129 0h1v1h-1zM133 0h1v1h-1zM158 0h1v1h-1zM162 0h1v1h-1zM163 0h1v1h-1zM177 0h1v1h-1zM179 0h1v1h-1zM183 0h1v1h-1zM190 0h1v1h-1zM192 0h1v1h-1zM205 0h1v1h-1zM209 0h1v1h-1zM210 0h1v1h-1zM212 0h1v1h-1zM228 0h1v1h-1zM232 0h1v1h-1zM233 0h1v1h-1zM234 0h1v1h-1zM253 0h1v1h-1zM258 0h1v1h-1zM269 0h1v1h-1zM270 0h1v1h-1zM276 0h1v1h-1zM281 0h1v1h-1zM284 0h1v1h-1zM285 0h1v1h-1zM286 0h1v1h-1zM294 0h1v1h-1zM300 0h1v1h-1zM307 0h1v1h-1zM312 0h1v1h-1zM319 0h1v1h-1zM2 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM13 1h1v1h-1zM16 1h1v1h-1zM17 1h1v1h-1zM27 1h1v1h-1zM29 1h1v1h-1zM31 1h1v1h-1zM35 1h1v1h-1zM38 1h1v1h-1zM41 1h1v1h-1zM45 1h1v1h-1zM46 1h1v1h-1zM50 1h1v1h-1zM53 1h1v1h-1zM56 1h1v1h-1zM60 1h1v1h-1zM70 1h1v1h-1zM78 1h1v1h-1zM85 1h1v1h-1zM87 1h1v1h-1zM88 1h1v1h-1zM91 1h1v1h-1zM96 1h1v1h-1zM101 1h1v1h-1zM104 1h1v1h-1zM106 1h1v1h-1zM110 1h1v1h-1zM111 1h1v1h-1zM112 1h1v1h-1zM117 1h1v1h-1zM118 1h1v1h-1zM124 1h1v1h-1zM133 1h1v1h-1zM139 1h1v1h-1zM141 1h1v1h-1zM142 1h1v1h-1zM147 1h1v1h-1zM152 1h1v1h-1zM153 1h1v1h-1zM162 1h1v1h-1zM163 1h1v1h-1zM167 1h1v1h-1zM168 1h1v1h-1zM169 1h1v1h-1zM179 1h1v1h-1zM184 1h1v1h-1zM195 1h1v1h-1zM196 1h1v1h-1zM198 1h1v1h-1zM201 1h1v1h-1zM204 1h1v1h-1zM207 1h1v1h-1zM212 1h1v1h-1zM219 1h1v1h-1zM223 1h1v1h-1zM225 1h1v1h-1zM232 1h1v1h-1zM243 1h1v1h-1zM244 1h1v1h-1zM245 1h1v1h-1zM252 1h1v1h-1zM253 1h1v1h-1zM258 1h1v1h-1zM261 1h1v1h-1zM265 1h1v1h-1zM266 1h1v1h-1zM273 1h1v1h-1zM279 1h1v1h-1zM285 1h1v1h-1zM286 1h1v1h-1zM291 1h1v1h-1zM293 1h1v1h-1zM296 1h1v1h-1zM303 1h1v1h-1zM307 1h1v1h-1zM308 1h1v1h-1zM311 1h1v1h-1zM313 1h1v1h-1zM314 1h1v1h-1zM316 1h1v1h-1zM317 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM10 2h1v1h-1zM13 2h1v1h-1zM17 2h1v1h-1zM18 2h1v1h-1zM19 2h1v1h-1zM20 2h1v1h-1zM22 2h1v1h-1zM23 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM28 2h1v1h-1zM36 2h1v1h-1zM38 2h1v1h-1zM39 2h1v1h-1zM40 2h1v1h-1zM41 2h1v1h-1zM44 2h1v1h-1zM47 2h1v1h-1zM49 2h1v1h-1zM52 2h1v1h-1zM55 2h1v1h-1zM59 2h1v1h-1zM61 2h1v1h-1zM66 2h1v1h-1zM68 2h1v1h-1zM72 2h1v1h-1zM75 2h1v1h-1zM76 2h1v1h-1zM78 2h1v1h-1zM79 2h1v1h-1zM81 2h1v1h-1zM82 2h1v1h-1zM83 2h1v1h-1zM85 2h1v1h-1zM86 2h1v1h-1zM90 2h1v1h-1zM92 2h1v1h-1zM93 2h1v1h-1zM96 2h1v1h-1zM98 2h1v1h-1zM102 2h1v1h-1zM103 2h1v1h-1zM108 2h1v1h-1zM109 2h1v1h-1zM112 2h1v1h-1zM113 2h1v1h-1zM114 2h1v1h-1zM116 2h1v1h-1zM117 2h1v1h-1zM121 2h1v1h-1zM124 2h1v1h-1zM127 2h1v1h-1zM128 2h1v1h-1zM132 2h1v1h-1zM136 2h1v1h-1zM139 2h1v1h-1zM141 2h1v1h-1zM144 2h1v1h-1zM145 2h1v1h-1zM149 2h1v1h-1zM150 2h1v1h-1zM153 2h1v1h-1zM155 2h1v1h-1zM156 2h1v1h-1zM157 2h1v1h-1zM158 2h1v1h-1zM161 2h1v1h-1zM163 2h1v1h-1zM164 2h1v1h-1zM166 2h1v1h-1zM168 2h1v1h-1zM171 2h1v1h-1zM173 2h1v1h-1zM174 2h1v1h-1zM175 2h1v1h-1zM179 2h1v1h-1zM180 2h1v1h-1zM181 2h1v1h-1zM182 2h1v1h-1zM183 2h1v1h-1zM184 2h1v1h-1zM188 2h1v1h-1zM189 2h1v1h-1zM192 2h1v1h-1zM193 2h1v1h-1zM194 2h1v1h-1zM200 2h1v1h-1zM201 2h1v1h-1zM202 2h1v1h-1zM203 2h1v1h-1zM205 2h1v1h-1zM206 2h1v1h-1zM210 2h1v1h-1zM213 2h1v1h-1zM215 2h1v1h-1zM216 2h1v1h-1zM220 2h1v1h-1zM221 2h1v1h-1zM222 2h1v1h-1zM223 2h1v1h-1zM228 2h1v1h-1zM234 2h1v1h-1zM235 2h1v1h-1zM236 2h1v1h-1zM239 2h1v1h-1zM242 2h1v1h-1zM243 2h1v1h-1zM245 2h1v1h-1zM247 2h1v1h-1zM248 2h1v1h-1zM252 2h1v1h-1zM254 2h1v1h-1zM257 2h1v1h-1zM258 2h1v1h-1zM259 2h1v1h-1zM261 2h1v1h-1zM262 2h1v1h-1zM266 2h1v1h-1zM268 2h1v1h-1zM269 2h1v1h-1zM270 2h1v1h-1zM271 2h1v1h-1zM272 2h1v1h-1zM273 2h1v1h-1zM275 2h1v1h-1zM278 2h1v1h-1zM281 2h1v1h-1zM282 2h1v1h-1zM287 2h1v1h-1zM288 2h1v1h-1zM292 2h1v1h-1zM301 2h1v1h-1zM305 2h1v1h-1zM306 2h1v1h-1zM309 2h1v1h-1zM313 2h1v1h-1zM315 2h1v1h-1zM317 2h1v1h-1zM318 2h1v1h-1zM319 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM9 3h1v1h-1zM11 3h1v1h-1zM12 3h1v1h-1zM14 3h1v1h-1zM15 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM21 3h1v1h-1zM23 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM29 3h1v1h-1zM30 3h1v1h-1zM31 3h1v1h-1zM33 3h1v1h-1zM34 3h1v1h-1zM37 3h1v1h-1zM40 3h1v1h-1zM41 3h1v1h-1zM43 3h1v1h-1zM45 3h1v1h-1zM47 3h1v1h-1zM48 3h1v1h-1zM49 3h1v1h-1zM52 3h1v1h-1zM53 3h1v1h-1zM59 3h1v1h-1zM60 3h1v1h-1zM61 3h1v1h-1zM63 3h1v1h-1zM65 3h1v1h-1zM66 3h1v1h-1zM68 3h1v1h-1zM70 3h1v1h-1zM71 3h1v1h-1zM72 3h1v1h-1zM73 3h1v1h-1zM75 3h1v1h-1zM76 3h1v1h-1zM78 3h1v1h-1zM79 3h1v1h-1zM82 3h1v1h-1zM83 3h1v1h-1zM84 3h1v1h-1zM86 3h1v1h-1zM88 3h1v1h-1zM89 3h1v1h-1zM92 3h1v1h-1zM96 3h1v1h-1zM99 3h1v1h-1zM100 3h1v1h-1zM104 3h1v1h-1zM105 3h1v1h-1zM106 3h1v1h-1zM108 3h1v1h-1zM109 3h1v1h-1zM111 3h1v1h-1zM113 3h1v1h-1zM115 3h1v1h-1zM117 3h1v1h-1zM119 3h1v1h-1zM120 3h1v1h-1zM123 3h1v1h-1zM124 3h1v1h-1zM126 3h1v1h-1zM130 3h1v1h-1zM131 3h1v1h-1zM132 3h1v1h-1zM133 3h1v1h-1zM135 3h1v1h-1zM136 3h1v1h-1zM137 3h1v1h-1zM138 3h1v1h-1zM142 3h1v1h-1zM143 3h1v1h-1zM147 3h1v1h-1zM148 3h1v1h-1zM149 3h1v1h-1zM150 3h1v1h-1zM152 3h1v1h-1zM153 3h1v1h-1zM158 3h1v1h-1zM159 3h1v1h-1zM164 3h1v1h-1zM165 3h1v1h-1zM166 3h1v1h-1zM167 3h1v1h-1zM168 3h1v1h-1zM169 3h1v1h-1zM170 3h1v1h-1zM171 3h1v1h-1zM172 3h1v1h-1zM173 3h1v1h-1zM174 3h1v1h-1zM175 3h1v1h-1zM176 3h1v1h-1zM178 3h1v1h-1zM179 3h1v1h-1zM181 3h1v1h-1zM183 3h1v1h-1zM184 3h1v1h-1zM185 3h1v1h-1zM187 3h1v1h-1zM190 3h1v1h-1zM191 3h1v1h-1zM192 3h1v1h-1zM193 3h1v1h-1zM195 3h1v1h-1zM196 3h1v1h-1zM197 3h1v1h-1zM200 3h1v1h-1zM201 3h1v1h-1zM202 3h1v1h-1zM206 3h1v1h-1zM207 3h1v1h-1zM208 3h1v1h-1zM212 3h1v1h-1zM219 3h1v1h-1zM222 3h1v1h-1zM225 3h1v1h-1zM226 3h1v1h-1zM229 3h1v1h-1zM231 3h1v1h-1zM236 3h1v1h-1zM237 3h1v1h-1zM238 3h1v1h-1zM241 3h1v1h-1zM242 3h1v1h-1zM244 3h1v1h-1zM246 3h1v1h-1zM247 3h1v1h-1zM249 3h1v1h-1zM250 3h1v1h-1zM252 3h1v1h-1zM253 3h1v1h-1zM255 3h1v1h-1zM256 3h1v1h-1zM259 3h1v1h-1zM260 3h1v1h-1zM261 3h1v1h-1zM262 3h1v1h-1zM264 3h1v1h-1zM266 3h1v1h-1zM267 3h1v1h-1zM268 3h1v1h-1zM270 3h1v1h-1zM271 3h1v1h-1zM276 3h1v1h-1zM278 3h1v1h-1zM279 3h1v1h-1zM280 3h1v1h-1zM282 3h1v1h-1zM283 3h1v1h-1zM284 3h1v1h-1zM285 3h1v1h-1zM289 3h1v1h-1zM292 3h1v1h-1zM294 3h1v1h-1zM296 3h1v1h-1zM298 3h1v1h-1zM301 3h1v1h-1zM302 3h1v1h-1zM303 3h1v1h-1zM305 3h1v1h-1zM306 3h1v1h-1zM307 3h1v1h-1zM308 3h1v1h-1zM309 3h1v1h-1zM310 3h1v1h-1zM314 3h1v1h-1zM315 3h1v1h-1zM317 3h1v1h-1zM319 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM13 4h1v1h-1zM14 4h1v1h-1zM15 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM18 4h1v1h-1zM20 4h1v1h-1zM23 4h1v1h-1zM25 4h1v1h-1zM28 4h1v1h-1zM30 4h1v1h-1zM31 4h1v1h-1zM33 4h1v1h-1zM35 4h1v1h-1zM36 4h1v1h-1zM37 4h1v1h-1zM38 4h1v1h-1zM39 4h1v1h-1zM40 4h1v1h-1zM42 4h1v1h-1zM43 4h1v1h-1zM44 4h1v1h-1zM45 4h1v1h-1zM46 4h1v1h-1zM47 4h1v1h-1zM48 4h1v1h-1zM49 4h1v1h-1zM50 4h1v1h-1zM51 4h1v1h-1zM52 4h1v1h-1zM53 4h1v1h-1zM55 4h1v1h-1zM56 4h1v1h-1zM58 4h1v1h-1zM59 4h1v1h-1zM60 4h1v1h-1zM61 4h1v1h-1zM62 4h1v1h-1zM64 4h1v1h-1zM68 4h1v1h-1zM69 4h1v1h-1zM72 4h1v1h-1zM73 4h1v1h-1zM75 4h1v1h-1zM76 4h1v1h-1zM77 4h1v1h-1zM80 4h1v1h-1zM81 4h1v1h-1zM82 4h1v1h-1zM83 4h1v1h-1zM84 4h1v1h-1zM88 4h1v1h-1zM89 4h1v1h-1zM90 4h1v1h-1zM91 4h1v1h-1zM92 4h1v1h-1zM93 4h1v1h-1zM94 4h1v1h-1zM95 4h1v1h-1zM96 4h1v1h-1zM99 4h1v1h-1zM100 4h1v1h-1zM101 4h1v1h-1zM103 4h1v1h-1zM104 4h1v1h-1zM105 4h1v1h-1zM106 4h1v1h-1zM108 4h1v1h-1zM109 4h1v1h-1zM112 4h1v1h-1zM117 4h1v1h-1zM118 4h1v1h-1zM119 4h1v1h-1zM120 4h1v1h-1zM121 4h1v1h-1zM122 4h1v1h-1zM123 4h1v1h-1zM125 4h1v1h-1zM126 4h1v1h-1zM127 4h1v1h-1zM128 4h1v1h-1zM130 4h1v1h-1zM132 4h1v1h-1zM133 4h1v1h-1zM134 4h1v1h-1zM138 4h1v1h-1zM139 4h1v1h-1zM140 4h1v1h-1zM141 4h1v1h-1zM144 4h1v1h-1zM146 4h1v1h-1zM149 4h1v1h-1zM150 4h1v1h-1zM151 4h1v1h-1zM152 4h1v1h-1zM154 4h1v1h-1zM157 4h1v1h-1zM158 4h1v1h-1zM159 4h1v1h-1zM161 4h1v1h-1zM162 4h1v1h-1zM166 4h1v1h-1zM167 4h1v1h-1zM169 4h1v1h-1zM170 4h1v1h-1zM172 4h1v1h-1zM173 4h1v1h-1zM174 4h1v1h-1zM175 4h1v1h-1zM177 4h1v1h-1zM179 4h1v1h-1zM184 4h1v1h-1zM185 4h1v1h-1zM188 4h1v1h-1zM189 4h1v1h-1zM190 4h1v1h-1zM191 4h1v1h-1zM192 4h1v1h-1zM194 4h1v1h-1zM195 4h1v1h-1zM196 4h1v1h-1zM197 4h1v1h-1zM201 4h1v1h-1zM202 4h1v1h-1zM203 4h1v1h-1zM204 4h1v1h-1zM205 4h1v1h-1zM206 4h1v1h-1zM207 4h1v1h-1zM209 4h1v1h-1zM210 4h1v1h-1zM212 4h1v1h-1zM214 4h1v1h-1zM215 4h1v1h-1zM217 4h1v1h-1zM219 4h1v1h-1zM220 4h1v1h-1zM221 4h1v1h-1zM224 4h1v1h-1zM225 4h1v1h-1zM227 4h1v1h-1zM228 4h1v1h-1zM229 4h1v1h-1zM231 4h1v1h-1zM232 4h1v1h-1zM233 4h1v1h-1zM234 4h1v1h-1zM235 4h1v1h-1zM238 4h1v1h-1zM241 4h1v1h-1zM245 4h1v1h-1zM246 4h1v1h-1zM247 4h1v1h-1zM248 4h1v1h-1zM249 4h1v1h-1zM251 4h1v1h-1zM252 4h1v1h-1zM253 4h1v1h-1zM254 4h1v1h-1zM255 4h1v1h-1zM256 4h1v1h-1zM258 4h1v1h-1zM259 4h1v1h-1zM260 4h1v1h-1zM261 4h1v1h-1zM262 4h1v1h-1zM263 4h1v1h-1zM265 4h1v1h-1zM267 4h1v1h-1zM268 4h1v1h-1zM269 4h1v1h-1zM270 4h1v1h-1zM271 4h1v1h-1zM272 4h1v1h-1zM273 4h1v1h-1zM275 4h1v1h-1zM276 4h1v1h-1zM278 4h1v1h-1zM279 4h1v1h-1zM280 4h1v1h-1zM281 4h1v1h-1zM282 4h1v1h-1zM284 4h1v1h-1zM285 4h1v1h-1zM286 4h1v1h-1zM287 4h1v1h-1zM289 4h1v1h-1zM290 4h1v1h-1zM291 4h1v1h-1zM293 4h1v1h-1zM295 4h1v1h-1zM297 4h1v1h-1zM298 4h1v1h-1zM300 4h1v1h-1zM302 4h1v1h-1zM303 4h1v1h-1zM304 4h1v1h-1zM306 4h1v1h-1zM307 4h1v1h-1zM308 4h1v1h-1zM309 4h1v1h-1zM311 4h1v1h-1zM312 4h1v1h-1zM313 4h1v1h-1zM315 4h1v1h-1zM317 4h1v1h-1zM318 4h1v1h-1zM319 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM18 5h1v1h-1zM19 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM23 5h1v1h-1zM24 5h1v1h-1zM25 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM31 5h1v1h-1zM32 5h1v1h-1zM33 5h1v1h-1zM34 5h1v1h-1zM35 5h1v1h-1zM36 5h1v1h-1zM38 5h1v1h-1zM39 5h1v1h-1zM40 5h1v1h-1zM41 5h1v1h-1zM42 5h1v1h-1zM43 5h1v1h-1zM44 5h1v1h-1zM45 5h1v1h-1zM46 5h1v1h-1zM47 5h1v1h-1zM49 5h1v1h-1zM50 5h1v1h-1zM51 5h1v1h-1zM52 5h1v1h-1zM53 5h1v1h-1zM54 5h1v1h-1zM56 5h1v1h-1zM57 5h1v1h-1zM59 5h1v1h-1zM61 5h1v1h-1zM63 5h1v1h-1zM64 5h1v1h-1zM65 5h1v1h-1zM66 5h1v1h-1zM67 5h1v1h-1zM68 5h1v1h-1zM69 5h1v1h-1zM70 5h1v1h-1zM71 5h1v1h-1zM72 5h1v1h-1zM73 5h1v1h-1zM74 5h1v1h-1zM75 5h1v1h-1zM76 5h1v1h-1zM77 5h1v1h-1zM78 5h1v1h-1zM80 5h1v1h-1zM81 5h1v1h-1zM83 5h1v1h-1zM85 5h1v1h-1zM86 5h1v1h-1zM87 5h1v1h-1zM89 5h1v1h-1zM90 5h1v1h-1zM91 5h1v1h-1zM92 5h1v1h-1zM93 5h1v1h-1zM94 5h1v1h-1zM95 5h1v1h-1zM96 5h1v1h-1zM97 5h1v1h-1zM98 5h1v1h-1zM99 5h1v1h-1zM100 5h1v1h-1zM101 5h1v1h-1zM102 5h1v1h-1zM103 5h1v1h-1zM105 5h1v1h-1zM108 5h1v1h-1zM109 5h1v1h-1zM110 5h1v1h-1zM111 5h1v1h-1zM112 5h1v1h-1zM113 5h1v1h-1zM114 5h1v1h-1zM115 5h1v1h-1zM116 5h1v1h-1zM117 5h1v1h-1zM119 5h1v1h-1zM120 5h1v1h-1zM123 5h1v1h-1zM124 5h1v1h-1zM125 5h1v1h-1zM126 5h1v1h-1zM127 5h1v1h-1zM129 5h1v1h-1zM130 5h1v1h-1zM131 5h1v1h-1zM132 5h1v1h-1zM133 5h1v1h-1zM134 5h1v1h-1zM135 5h1v1h-1zM136 5h1v1h-1zM137 5h1v1h-1zM138 5h1v1h-1zM139 5h1v1h-1zM141 5h1v1h-1zM142 5h1v1h-1zM143 5h1v1h-1zM145 5h1v1h-1zM146 5h1v1h-1zM148 5h1v1h-1zM149 5h1v1h-1zM151 5h1v1h-1zM152 5h1v1h-1zM153 5h1v1h-1zM154 5h1v1h-1zM157 5h1v1h-1zM158 5h1v1h-1zM160 5h1v1h-1zM161 5h1v1h-1zM162 5h1v1h-1zM163 5h1v1h-1zM164 5h1v1h-1zM165 5h1v1h-1zM166 5h1v1h-1zM167 5h1v1h-1zM168 5h1v1h-1zM169 5h1v1h-1zM170 5h1v1h-1zM171 5h1v1h-1zM172 5h1v1h-1zM173 5h1v1h-1zM175 5h1v1h-1zM176 5h1v1h-1zM177 5h1v1h-1zM178 5h1v1h-1zM180 5h1v1h-1zM181 5h1v1h-1zM182 5h1v1h-1zM183 5h1v1h-1zM184 5h1v1h-1zM185 5h1v1h-1zM186 5h1v1h-1zM187 5h1v1h-1zM188 5h1v1h-1zM189 5h1v1h-1zM191 5h1v1h-1zM194 5h1v1h-1zM195 5h1v1h-1zM196 5h1v1h-1zM197 5h1v1h-1zM200 5h1v1h-1zM201 5h1v1h-1zM202 5h1v1h-1zM203 5h1v1h-1zM204 5h1v1h-1zM206 5h1v1h-1zM207 5h1v1h-1zM208 5h1v1h-1zM209 5h1v1h-1zM210 5h1v1h-1zM211 5h1v1h-1zM214 5h1v1h-1zM215 5h1v1h-1zM216 5h1v1h-1zM217 5h1v1h-1zM218 5h1v1h-1zM219 5h1v1h-1zM220 5h1v1h-1zM221 5h1v1h-1zM222 5h1v1h-1zM223 5h1v1h-1zM224 5h1v1h-1zM225 5h1v1h-1zM227 5h1v1h-1zM228 5h1v1h-1zM229 5h1v1h-1zM230 5h1v1h-1zM231 5h1v1h-1zM232 5h1v1h-1zM234 5h1v1h-1zM235 5h1v1h-1zM236 5h1v1h-1zM237 5h1v1h-1zM238 5h1v1h-1zM239 5h1v1h-1zM240 5h1v1h-1zM241 5h1v1h-1zM242 5h1v1h-1zM243 5h1v1h-1zM244 5h1v1h-1zM245 5h1v1h-1zM246 5h1v1h-1zM247 5h1v1h-1zM249 5h1v1h-1zM250 5h1v1h-1zM251 5h1v1h-1zM252 5h1v1h-1zM253 5h1v1h-1zM254 5h1v1h-1zM255 5h1v1h-1zM256 5h1v1h-1zM257 5h1v1h-1zM259 5h1v1h-1zM260 5h1v1h-1zM261 5h1v1h-1zM262 5h1v1h-1zM263 5h1v1h-1zM264 5h1v1h-1zM265 5h1v1h-1zM266 5h1v1h-1zM267 5h1v1h-1zM268 5h1v1h-1zM270 5h1v1h-1zM271 5h1v1h-1zM272 5h1v1h-1zM274 5h1v1h-1zM275 5h1v1h-1zM276 5h1v1h-1zM277 5h1v1h-1zM278 5h1v1h-1zM279 5h1v1h-1zM281 5h1v1h-1zM282 5h1v1h-1zM283 5h1v1h-1zM284 5h1v1h-1zM285 5h1v1h-1zM286 5h1v1h-1zM287 5h1v1h-1zM289 5h1v1h-1zM290 5h1v1h-1zM291 5h1v1h-1zM292 5h1v1h-1zM293 5h1v1h-1zM294 5h1v1h-1zM295 5h1v1h-1zM296 5h1v1h-1zM297 5h1v1h-1zM299 5h1v1h-1zM300 5h1v1h-1zM301 5h1v1h-1zM302 5h1v1h-1zM303 5h1v1h-1zM304 5h1v1h-1zM305 5h1v1h-1zM306 5h1v1h-1zM307 5h1v1h-1zM308 5h1v1h-1zM309 5h1v1h-1zM310 5h1v1h-1zM311 5h1v1h-1zM312 5h1v1h-1zM314 5h1v1h-1zM315 5h1v1h-1zM316 5h1v1h-1zM317 5h1v1h-1zM318 5h1v1h-1zM319 5h1v1h-1z"></path>
         </svg>
         <div class="footer-wrapper">
             <div class="content footer-items">
-                <div class="pixelify-sans-display">
-                    <h3>Contato</h3>
-                </div>
                 <div>
-                    <p>E-mail 1: mls22@discente.ifpe.edu.br</p>
-                    <p>E-mail 2: mfmb@discente.ifpe.edu.br</p>
-                    
+                    <h3 class="pixelify-sans-display">SideQuest</h3>
                     <div>
                         <p>© 2026 SideQuest. Todos os direitos reservados.</p>
                     </div>
+                </div>
+                <div>
+                    <h4 class="pixelify-sans-display">Contato</h4>
+                    <a href="mailto:mls22@discente.ifpe.edu.br" class="item contact">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 20H4v-2h16v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-8-4h-4v-2h4v2Zm-4-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-8-2H6V8h2v2Zm10 0h-2V8h2v2Zm2-4H4V4h16v2Z"></path></svg>
+                        <span>Murilo Lima</span>
+                    </a>
+                    <a href="mailto:mfmb@discente.ifpe.edu.br" class="item contact">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 20H4v-2h16v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-8-4h-4v-2h4v2Zm-4-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-8-2H6V8h2v2Zm10 0h-2V8h2v2Zm2-4H4V4h16v2Z"></path></svg>
+                        <span>Matheus Marques</span>
+                    </a>
                 </div>
             </div>
         </div>

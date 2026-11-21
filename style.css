@@ -7,6 +7,7 @@
 /* DEFINIÇÃO */
 :root{
     --bg-bege: #F6F0D0;
+    --dark-bege: #EFE2B8;
     --dark: #2D2D30;
     --yellow: #FFDB60;
     --red: #E43A45;
@@ -63,6 +64,7 @@ input{
     border-radius: 0.2rem;
     text-decoration: none;
     font-weight: 600;
+    border: 1px solid var(--dark);
 }
 
 .btn-banner{
@@ -70,6 +72,15 @@ input{
     color: var(--dark);
 }
 
+.btn-compra{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--yellow);
+    color: var(--dark);
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+}
 
 /* HEADER*/
 header{
@@ -79,22 +90,42 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    background-color: var(--yellow);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--yellow);
 }
 
-.barra-pesquisa{
+.wrapper-pesquisa{
+    width: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
 }
 
-.barra-pesquisa input{
-    background-color: transparent;
-    border: 1px solid var(--dark);
+.wrapper-pesquisa label{
+    cursor: pointer;
+}
+
+#pesquisa{
+    width: 100%;
+    background-color: #EFE2B840;
+    border: none;
+    border-radius: .2rem;
+}
+
+#pesquisa::placeholder{
+    color: #FFFFFF80;
+}
+
+#pesquisa:focus{
+    outline:none;
+    border: 1px solid var(--yellow);
+    background-color: var(--bg-bege);
+}
+
+#pesquisa:focus::placeholder{
+    color: rgb(from var(--dark) r g b / 50%)
 }
 
 /*NAV*/
@@ -107,7 +138,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--dark);
     padding: 0.3rem;
+    background-color: var(--yellow);
 }
 
 .item{
@@ -168,7 +201,7 @@ nav{
 }
 
 .banner-content{
-    width: 25%;
+    width: 27%;
     position: absolute;
     margin-right: 15rem;
     padding: 2rem;
@@ -190,15 +223,27 @@ nav{
 
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%; /* Two columns, each 50% */
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: auto auto; /* Two rows */
     gap: 10px; /* Adjust the gap between grid items if needed */
     width: 100%; /* Full width of the page */
 }
 
+.action-figures{
+    display: flex;
+    flex-direction: row;
+}
+
 /*CARDS*/
 .card{
     padding: 1rem;
+    border: 1px solid var(--dark);
+    
+    border-radius: .4rem;
+}
+
+.card:hover{
+    background-color: var(--dark-bege);
 }
 
 .card-img{
@@ -207,6 +252,7 @@ nav{
     height: auto;
 }
 
+
 /*FOOTER*/
 footer{
     display: flex;
@@ -214,9 +260,9 @@ footer{
 }
 
 .footer-wrapper{
-    background-color: var(--dark);
+    background-color: var(--yellow);
     padding: 3rem 0;
-    color: white;
+    color: var(--dark);
 }
 
 .footer-items{
@@ -229,7 +275,26 @@ footer h3{
     font-size: 8rem;
 }
 
-footer svg{
+footer h4{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.footer-svg{
     width: 100%;
-    color: var(--dark);
+    color: var(--yellow);
+}
+
+.contact{
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .7rem;
+}
+
+.contact:hover{
+    color: var(--red);
+    border-color: var(--red);
 }
